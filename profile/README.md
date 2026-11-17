@@ -8,13 +8,14 @@ such as Amber or nsecBunker. The server stores that signed event and publishes i
 signing key stays in the signer.
 
 The hosted service is [smartflow.social](https://smartflow.social). The same source runs on a server
-you operate. The license is the [Unlicense](https://unlicense.org). The app is `0.1.0-alpha.1`.
+you operate. The license is the [Unlicense](https://unlicense.org). The app is `1.0.0-beta.1`, a
+prerelease of the first coordinated open-source release. It is not a stable `1.0.0`.
 
 ## Repositories
 
 | Repository | What it does |
 | --- | --- |
-| [smartflowsocial](https://github.com/smartflowsocial/smartflowsocial) | A scheduler for Nostr. Sign each post with your own signer. The server stores that signed event and publishes it on schedule, even while you are offline. The same code runs hosted at smartflow.social and self-hosted. Public-domain alpha (Unlicense). |
+| [smartflowsocial](https://github.com/smartflowsocial/smartflowsocial) | A scheduler for Nostr. Sign each post with your own signer. The server stores that signed event and publishes it on schedule, even while you are offline. The same code runs hosted at smartflow.social and self-hosted. Public domain (Unlicense). `1.0.0-beta.1` is a prerelease. |
 | [smartflowsocial-publisher](https://github.com/smartflowsocial/smartflowsocial-publisher) | HTTP publisher for SmartFlowSocial. A Cloudflare Worker that accepts signed Nostr events and publishes them to relays with retries, circuit breakers, and rate limits. |
 | [smartflowsocial-blastr](https://github.com/smartflowsocial/smartflowsocial-blastr) | Broadcast relay for SmartFlowSocial. Accepts signed Nostr events, gates them by pubkey entitlement and relay policy, and fans them out to a curated relay set. |
 | [smartflowsocial-blossom](https://github.com/smartflowsocial/smartflowsocial-blossom) | Blossom media gateway for SmartFlowSocial. Authenticates uploads, verifies blob integrity, stores media in Cloudflare R2, and commits uploads back to SmartFlowSocial. |
